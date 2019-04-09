@@ -1,0 +1,13 @@
+amiga 50
+amigacd32 50
+amstradcpc 50
+atarist 50
+bbc 50
+c64 50
+c128 50
+plus4 50
+vic20 50
+dragon32 50
+samcoupe 50
+zx81 50
+zxspectrum 50
