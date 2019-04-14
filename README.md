@@ -125,7 +125,9 @@ Your image users will then use the toggle utility in the options menu to enable 
 
 #### Donate
 
-MegaRefresh is the result of a lot of trial and error, research and experimentation. In particular getting from a working proof of concept to its present release version has proven to require a substantial amount of work. I'm delighted to finally be able to contribute something back to the emulation community, but if you wish to show a token of appreciation and support further development please consider donating any amount of your choice at https://www.paypal.me/zacchi
+MegaRefresh is the result of a lot of trial and error, research and experimentation. In particular getting from a working proof of concept to its present release version for three platforms has proven to require a substantial amount of work.
+
+I'm delighted to finally be able to contribute something back to the emulation community, but if you wish to show a token of appreciation and support further development please consider donating any amount of your choice at https://www.paypal.me/zacchi
 
 Thanks :)
 

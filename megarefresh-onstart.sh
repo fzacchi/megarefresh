@@ -24,7 +24,7 @@ slen=2
 # parse for empty or unset runcommand variables on input and exit right away, just to be safe
 if [[ -z "$1" ]] || [[ -z "$2" ]] ; then
 echo
-	echo    "   Zak's MegaRefresh script v1.0"
+	echo    "   Zak's MegaRefresh script v1.1a"
 	echo	"   Missing system or emulator name"
 	echo	"   Bypassing the script ..."
 	sleep $slen
@@ -48,7 +48,7 @@ rom_bn="${rom_bn##*/}"
 # parse skip.txt for systems, emulators or roms that need to bypass MegaRefresh for proper functioning
 if grep -xq "$system\|$emul\$rom_bn" /opt/retropie/configs/all/megarefresh/skip.txt ; then
 	echo
-	echo    "   Zak's MegaRefresh script v1.0"
+	echo    "   Zak's MegaRefresh script v1.1a"
 	echo	"   This system, emulator or game is flagged as 'skip'"
 	echo	"   Bypassing the script ..."
 	sleep $slen
@@ -67,7 +67,7 @@ if grep -q "(Europe)\|(Spain)\|(France)\|(Germany)\|(Italy)\|(UK)\|(Netherlands)
 
 	game_name=$(echo $rom_bn | cut -d "(" -f1 | rev | cut -c 2- | rev)
 	echo
-	echo    "   Zak's MegaRefresh script v1.0"
+	echo    "   Zak's MegaRefresh script v1.1a"
 	echo -e "   \e[41m$game_name\e[0m is a PAL game"
 	echo -e "   Engaging \e[41m50 Hz\e[0m refresh frequency"
 	vcgencmd hdmi_cvt $x_res $y_res 50 0 0 0 1 > /dev/null
@@ -82,7 +82,7 @@ elif grep -wq "$system" /opt/retropie/configs/all/megarefresh/systems.txt ; then
 
 	refresh=$(grep -w $system /opt/retropie/configs/all/megarefresh/systems.txt | cut -d " " -f2 | tr -d "\r\n")
 	echo
-	echo    "   Zak's MegaRefresh script v1.0"
+	echo    "   Zak's MegaRefresh script v1.1a"
 	echo -e "   System-specific settings found for \e[41m$system\e[0m"
 	echo -e "   Engaging \e[41m$refresh Hz\e[0m refresh frequency"
 	vcgencmd hdmi_cvt $x_res $y_res $refresh 0 0 0 1 > /dev/null
@@ -99,7 +99,7 @@ elif grep -wq "$rom_bn" /opt/retropie/configs/all/megarefresh/refreshlist.txt &&
 
 	refresh=$(grep -w $rom_bn /opt/retropie/configs/all/megarefresh/refreshlist.txt | cut -d " " -f2 | tr -d "\r\n")
 	echo
-	echo    "   Zak's MegaRefresh script v1.0"
+	echo    "   Zak's MegaRefresh script v1.1a"
 	echo -e "   Game-specific settings found for \e[41m$rom_bn\e[0m"
 	echo -e "   Engaging \e[41m$refresh Hz\e[0m refresh frequency"
 	vcgencmd hdmi_cvt $x_res $y_res $refresh 0 0 0 1 > /dev/null

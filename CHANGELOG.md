@@ -48,5 +48,6 @@
 
 1.0 - Added offline installation method support, more polish 
 
-1.0a - Recalbox/Batocera version, initial public release
+1.1 - Recalbox/Batocera version
 
+1.1a - Fixed Midway Y, T, W-Unit refresh, initial public release

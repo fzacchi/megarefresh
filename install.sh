@@ -50,6 +50,6 @@ else
 fi
 
 echo
-echo "Zak's MegaRefresh Script v1.0 installed/updated successfully."
+echo "Zak's MegaRefresh Script v1.1a installed/updated successfully."
 
 sleep 5
